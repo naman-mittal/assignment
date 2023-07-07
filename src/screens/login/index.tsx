@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, Image} from 'react-native';
 import SimpleButton from '../../components/button/SimpleButton';
 import {useDispatch} from 'react-redux';
 import {login} from '../../store/actions/Thunk';
@@ -35,6 +35,10 @@ const Login = () => {
 
   return (
     <View style={styles.container}>
+      <Image
+        style={styles.imageStyle}
+        source={require('../../assets/images/target.png')}
+      />
       <TextInput
         label="Email"
         placeholder="enter your email"
@@ -63,10 +67,15 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
     justifyContent: 'center',
-    // alignItems: 'center',
   },
   buttonStyle: {
     marginTop: 20,
+  },
+  imageStyle: {
+    height: 150,
+    width: 150,
+    marginBottom: 40,
+    alignSelf: 'center',
   },
 });
 

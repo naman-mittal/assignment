@@ -141,19 +141,13 @@ const styles = StyleSheet.create({
   centeredView: {
     flex: 1,
     justifyContent: 'center',
-    // alignItems: 'center',
-    // marginTop: 22,
     backgroundColor: 'rgba(0,0,0,0.7)',
   },
   modalView: {
-    // flex: 1,
-    // width: '100%',
     margin: 20,
     backgroundColor: 'white',
     borderRadius: 20,
     padding: 15,
-    // borderWidth: 1,
-    // alignItems: 'center',
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
